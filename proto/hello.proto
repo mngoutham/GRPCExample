@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+package hello;
+
+message Todo {
+    string text = 1;
+    bool done = 2;
+}
