@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package todo;
+
+message Task {
+    string text = 1;
+}
+
+message Text {
+    string text = 1;
+}
+
+message Void {}
+
+service Tasks {
+    rpc Add(Text) returns(Task) {}
+}
